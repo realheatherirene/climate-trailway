@@ -8,7 +8,7 @@ const IMLS = { title: "IMLS: Mass Audubon's Accessible Trails Project", url: "ht
 export default {
   title: "Climate Trailway",
   lede: "Find your way into the climate movement!",
-  intro: "Pick your trail, do some exploring, visit the climate pavilion, jot down some notes, and take home a field guide to climate action!",
+  intro: "Pick your trail, do some exploring, visit the climate pavilion, jot down some notes, and take home a field guide to climate action.",
 
   /* The Visitor Center's board, with the trail picker at the bottom. The key
      shows the places on the map (drawn from shared.js) and the two kinds
@@ -20,7 +20,7 @@ export default {
       { route: true }
     ],
     /* A few words on accessibility, just above the story link. */
-    storyIntro: "An accessible trail is one people of all abilities can use, like a smooth, wide path with benches and maps in Braille. This trail aims for the same online, so if we missed something, please let us know.",
+    storyIntro: "An accessible trail is one people of all abilities can use, like a smooth, wide path with benches and maps in Braille.",
     story: [
       { p: "Mass Audubon, a conservation group in Massachusetts, builds All Persons Trails so visitors of all abilities can enjoy nature. Its trails offer features like audio tours, Braille and tactile maps, rope guides, wider boardwalks, and benches. The trail at Brewster's Woods, opened in May 2024, has a wide, stable surface of crushed stone." },
       { quote: { text: "Nature provides a host of physical, mental, and emotional benefits that should be available to everyone.", who: "Renata Pomponi, Mass Audubon", src: MASS_AUDUBON } },
@@ -30,7 +30,7 @@ export default {
   },
 
   pick: {
-    hint: "Each trail is a different color, representing a different way of showing care. Start with the one that seems most like you.",
+    hint: "Each trail is a different color - a different way of showing care. Start with the one that seems most like you.",
 
     /* "Find your trail": an optional helper above the six trails. It's a
        way to recognize what you already do well, not a test, so nothing
