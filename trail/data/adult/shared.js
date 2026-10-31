@@ -325,9 +325,9 @@ export default {
      and asks how the trail itself could be better. */
   feedback: {
     to: "trailmap@kinfeather.com",
-    includes: "Your email will include your trail and the exhibits you visited, but not your notes.",
+    includes: "Your feedback email will include the name of your trail and the exhibits you visited, but not your personal notes.",
     copy: "Copy it",
-    privacy: "**Nothing is sent until you send it.** The button opens your own email app. If it doesn't, copy your answers and email them to {to}.",
+    privacy: "The button should open your own email app. If it doesn't, copy your answers and email them to {to}.",
     mail: { trail: "Trail", exhibits: "Exhibits" },
     check: {
       title: "Before you go",
@@ -352,7 +352,7 @@ export default {
         { key: "topics", ask: "Was any topic unclear, or missing?" },
         { key: "comment", ask: "Anything you loved, or anything that got in the way?" }
       ],
-      send: "Write the email"
+      send: "Send it"
     }
   },
 
@@ -371,7 +371,7 @@ export default {
   notes: {
     label: "Your notes",
     placeholder: "Write your thoughts here, if you'd like.",
-    help: "**Nothing is saved online.** Your notes stay in this browser on this device, and nowhere else. Keep in mind that anyone who uses this device and browser could open them, so clear your notes when you're done.",
+    help: "**Nothing is saved online.** Your notes stay in this browser on this device, and nowhere else. Keep in mind, though, that anyone who uses this device and browser could open them, so clear your notes when you're done.",
     clear: "Clear my notes",
     cleared: "Cleared",
     off: "This browser can't keep notes. Print or copy them before you leave."
