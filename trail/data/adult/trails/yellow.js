@@ -15,7 +15,7 @@ export default {
     blocks: [
       { p: "Motivating is a way of helping. It means getting people excited, keeping things moving, and cheering others on. Anyone can take this trail." },
       { sub: "Three typical actions" },
-      { p: "Acts of motivating show up in many different ways, but these three are quite common." },
+      { p: "Here are three common ones." },
       { actions: [
         { word: "Inspire", phrase: "Getting people excited about why it matters now", example: "Sharing what you did and why you're glad you did it. Saying, \"We can do this, and here's how.\"" },
         { word: "Rally", phrase: "Keeping things moving", example: "Sending the reminder the day before. Setting a goal the group can reach, and celebrating when you get there." },

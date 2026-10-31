@@ -15,7 +15,7 @@ export default {
     blocks: [
       { p: "Anchoring is a way of helping. It means keeping a clear purpose, making a solid plan, and being someone others can count on. Anyone can take this trail." },
       { sub: "Three typical actions" },
-      { p: "Acts of anchoring show up in many different ways, but these three are quite common." },
+      { p: "Here are three common ones." },
       { actions: [
         { word: "Focus", phrase: "Keeping everyone clear on what the group is for", example: "Bringing a meeting back to its goal when it drifts. Saying, \"Let's do one thing well.\"" },
         { word: "Build", phrase: "Setting up the roles, plans, and habits a group runs on", example: "Making the sign-up sheet. Writing down who does what, and by when." },

@@ -15,7 +15,7 @@ export default {
     blocks: [
       { p: "Creating is a way of helping. It means imagining what could be, trying new ways, and making room for everyone's ideas. Anyone can take this trail." },
       { sub: "Three typical actions" },
-      { p: "Acts of creating show up in many different ways, but these three are quite common." },
+      { p: "Here are three common ones." },
       { actions: [
         { word: "Dream", phrase: "Imagining what could be", example: "Asking, \"What if our block had a garden?\" Sketching an idea on the back of an envelope." },
         { word: "Invent", phrase: "Trying new ways of doing things", example: "Fixing something with what you have on hand. Trying a new way when the old way stops working." },

@@ -15,7 +15,7 @@ export default {
     blocks: [
       { p: "Navigating is a way of helping. It means sorting out what matters most, adjusting when things change, and helping people find their way. Anyone can take this trail." },
       { sub: "Three typical actions" },
-      { p: "Acts of navigating show up in many different ways, but these three are quite common." },
+      { p: "Here are three common ones." },
       { actions: [
         { word: "Assess", phrase: "Sorting out what matters most right now", example: "Making a short list of what has to happen first. Asking, \"What's most urgent, and what can wait?\"" },
         { word: "Adapt", phrase: "Choosing the next step, and adjusting when things change", example: "Moving the event indoors when a storm rolls in. Trying plan B when plan A stalls." },

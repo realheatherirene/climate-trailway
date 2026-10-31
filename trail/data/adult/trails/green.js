@@ -15,7 +15,7 @@ export default {
     blocks: [
       { p: "Connecting is a way of helping. It means bringing people together, linking them to help, and making sure everyone belongs. Anyone can take this trail." },
       { sub: "Three typical actions" },
-      { p: "Acts of connecting show up in many different ways, but these three are quite common." },
+      { p: "Here are three common ones." },
       { actions: [
         { word: "Unite", phrase: "Bringing people who care about the same thing together", example: "Starting the group chat or the contact list. Inviting a neighbor to come along." },
         { word: "Network", phrase: "Linking people to the help and resources they need", example: "Knowing who to call. Passing along a flyer, a lead, or a name." },

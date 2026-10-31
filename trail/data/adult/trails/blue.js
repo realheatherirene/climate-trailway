@@ -15,7 +15,7 @@ export default {
     blocks: [
       { p: "Communicating is a way of helping. It means finding the words, keeping everyone informed, and shaping how people talk about it. Anyone can take this trail." },
       { sub: "Three typical actions" },
-      { p: "Acts of communicating show up in many different ways, but these three are quite common." },
+      { p: "Here are three common ones." },
       { actions: [
         { word: "Clarify", phrase: "Finding the words for why something matters", example: "Explaining a hard idea so your neighbor gets it. Saying the one sentence that makes it click." },
         { word: "Inform", phrase: "Making sure everyone knows what's going on", example: "Sharing the meeting time in the group chat. Posting the flyer. Filling in the person who missed it." },
