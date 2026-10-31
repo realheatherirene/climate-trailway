@@ -1384,54 +1384,6 @@ details:not([open]) .close-label {
     color: var(--text-secondary);
 }
 
-/* Which topics go in the Field Guide. */
-.door {
-    margin: 0.4rem 0 1.6rem;
-    padding: 1.3rem 1.2rem;
-    border: 2px dashed var(--note);
-    border-radius: 14px;
-    background: var(--note-tint);
-}
-
-.door-q {
-    margin: 0 0 0.9rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #5C4418;
-}
-
-.door-list {
-    display: grid;
-    gap: 0.5rem;
-    margin: 0 0 1rem;
-    padding: 0;
-    list-style: none;
-}
-
-.door-pick {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    min-height: 48px;
-    padding: 0 0.9rem;
-    border-radius: 10px;
-    background: var(--bg-primary);
-    font-size: 1.05rem;
-    cursor: pointer;
-}
-
-.door-pick input {
-    width: 1.35rem;
-    height: 1.35rem;
-    accent-color: var(--note);
-}
-
-.door-pick svg {
-    width: 1.3rem;
-    height: 1.3rem;
-    color: var(--lodge);
-}
-
 /* "Back to the Climate Lodge," at the bottom of the topic box. */
 .back-row {
     margin: 1rem 0 0;
@@ -1641,18 +1593,6 @@ details:not([open]) .close-label {
     color: var(--board);
 }
 
-/* No exhibit visited yet: the Pavilion sits quieter, with no check, and a
-   line under the loop offers the way back. */
-.trip-steps .is-skipped .trip-icon {
-    opacity: 0.45;
-}
-
-.trip-none {
-    max-width: var(--read);
-    margin: 0.8rem 0 0;
-    color: var(--text-secondary);
-}
-
 /* The pinned notes: white cards with a pin at the top. */
 .pins {
     display: grid;
@@ -1697,10 +1637,7 @@ details:not([open]) .close-label {
     margin: 0 0 0.6rem;
 }
 
-.pin-words,
-.pin-save,
-.pin-before,
-.pin-feedback {
+.pin-words {
     grid-column: 1 / -1;
 }
 
@@ -1709,38 +1646,13 @@ details:not([open]) .close-label {
     margin: 0.9rem 0 0.4rem;
 }
 
-/* "Before you go": one print button, then short openers. */
-.before-print {
-    margin: 0 0 0.4rem;
-}
-
-.before-item {
-    border-top: 1px solid var(--border-color);
-    margin: 0;
-    padding: 0.35rem 0;
-}
-
-.before-item > summary {
-    min-height: 44px;
-    align-items: center;
-    cursor: pointer;
-}
-
-.before-body {
-    padding: 0.2rem 0 0.6rem;
-}
-
-.before-body .save {
-    margin: 0;
-}
-
 /* The way back to the start, at the very end. */
 .home-row {
     margin: 1.4rem 0 0.4rem;
 }
 
-/* "Help make the trail better": short questions, side by side where
-   there's room, each answer easy to tap. */
+/* The feedback forms: short questions, side by side where there's room,
+   each answer easy to tap. */
 .fb-q {
     margin: 0 0 0.9rem;
     padding: 0;
@@ -1811,14 +1723,6 @@ details:not([open]) .close-label {
 
 .fb-includes {
     margin-top: 0.5rem;
-}
-
-.pin-feedback .save-row {
-    margin: 0.2rem 0 0.7rem;
-}
-
-.pin-save .save {
-    margin: 0;
 }
 
 .pin-words p {
@@ -2602,10 +2506,6 @@ ul.plain li {
         padding-right: 0.7rem;
     }
 
-    .door {
-        padding: 1.1rem 0.9rem;
-    }
-
     .actions,
     .defs {
         grid-template-columns: 1fr;
@@ -2757,8 +2657,8 @@ ul.plain li {
     margin-bottom: 0.5rem;
 }
 
-/* The Field Guide: its own card under the board, the same look as a
-   note, with every way to keep it in one row. */
+/* The Field Guide, and "Before you go" after it: cards of their own under
+   the board, the same look as a note, without the pin. */
 .pin.take {
     margin-top: 1.4rem;
 }
@@ -2851,46 +2751,6 @@ ul.plain li {
     width: 1.1rem;
     height: 1.1rem;
     color: var(--lodge);
-}
-
-/* "Remember your trail": a row of quiet chips, a swatch or an icon and a
-   name in plain text. */
-.pin-recap {
-    grid-column: 1 / -1;
-}
-
-.recap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1.2rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.recap li {
-    display: flex;
-    align-items: center;
-    gap: 0.45rem;
-    font-weight: 700;
-}
-
-.recap .blaze {
-    width: 0.9rem;
-    height: 1.35rem;
-    margin: 0;
-    border-radius: 3px;
-}
-
-.recap-icon {
-    display: grid;
-    place-items: center;
-    color: var(--lodge);
-}
-
-.recap-icon svg {
-    width: 1.3rem;
-    height: 1.3rem;
 }
 
 /* The board's notes, pinned by hand: each one tilted a little, left or
