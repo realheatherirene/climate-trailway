@@ -23,7 +23,7 @@ export default {
        picks a trail. */
     trailhead: { name: "Trailhead", icon: "i-sign", route: "Start here.",
       title: "Trailhead", sub: "Start here.",
-      hint: "The trail takes 20 to 30 minutes, and you can save your spot anytime." },
+      hint: "The Climate Trailway takes 20 to 30 minutes to complete. If you need a break, just save your spot!" },
     /* Markers 1 to 4: on the reader's own trail. */
     trail: { name: "Markers 1–4", short: "Markers 1–4", icon: "i-trail" },
     /* The Climate Pavilion: where every trail meets, and the exhibits are.
@@ -83,7 +83,7 @@ export default {
     by: "a {owner} project",
     /* While readers test it: a small tag beside that line, linking
        to one line in the footer that asks for feedback by email. */
-    preview: { tag: "Preview", line: "The Trail is a preview. Tell us what works and what doesn't:", email: "trailmap@kinfeather.com", subject: "Climate Trailway feedback" }
+    preview: { tag: "Preview", line: "The Climate Trailway is currently in preview. Tell us what works and what doesn't:", email: "trailmap@kinfeather.com", subject: "Climate Trailway feedback" }
   },
 
   /* The park map at the Visitor Center: a picture of the places above, for
@@ -92,7 +92,7 @@ export default {
   map: { here: "You are here", lake: "Lake", north: "N",
     /* The map's key, beside the places above. */
     key: {
-      blazes: "Trail Blazes", blazesText: "Pick a trail.",
+      blazes: "Trail Blazes", blazesText: "Pick your trail.",
       markers: "Trail Markers", markersText: "Open to explore.",
       back: "Return Trail", backText: "Head back."
     } },
@@ -335,8 +335,8 @@ export default {
       subject: "Climate Trailway: before you go",
       questions: [
         { key: "before", ask: "Before today, did you see a place for yourself in climate action?", options: ["No", "A little", "Yes"] },
-        { key: "now", ask: "And now?", options: ["No", "A little", "Yes"] },
-        { key: "fit", ask: "Did you find a way of helping that fits you?", options: ["Yes", "Partly", "Not yet"] }
+        { key: "now", ask: "Do you see a place for yourself now?", options: ["No", "A little", "Yes"] },
+        { key: "fit", ask: "Did you find a trail - a way of helping - that fits you?", options: ["Yes", "Partly", "Not yet"] }
       ],
       send: "Send my answers"
     },
