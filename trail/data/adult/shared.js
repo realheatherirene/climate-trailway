@@ -271,35 +271,25 @@ export default {
       backAll: "{total} markers to bring it close to home.",
       lodge: "You visited the {exhibits}.",
       here: "You made it.",
-      /* With no exhibit visited, the Visitor Center still opens in full.
-         The Pavilion shows on the loop without a check, and this line
-         offers the way back to it. */
-      lodgeNone: "You haven't visited an exhibit yet.",
-      empty: "Each exhibit at the Climate Pavilion adds a first step and its pages to your Field Guide. Visit one anytime.",
+      /* Before any exhibit is visited: the way to the Pavilion. */
+      empty: "Visit at least one exhibit at the Climate Pavilion first. Each one adds a first step and its pages to your Field Guide.",
       emptyGo: "Go to the Climate Pavilion",
       /* The Bulletin Board: everything for the road home, as pinned
          notes. Every note speaks to the reader; none describes the page. */
       title: "Bulletin Board",
-      /* The first note: the reader's trail and the exhibits they visited,
-         as a swatch and icons, with names in plain text. */
-      recap: { title: "Remember your journey" },
       /* "Plan your first step": a short walk-through, one small question at
          a time. Every answer is optional, stays on this device, and goes in
          the Field Guide as "Your plan." */
       plan: {
         title: "Plan your first step",
         steps: [
-          { q: "Pick a topic.", hint: "Choose from the exhibits you visited, or write your own. Any topic is good.",
-            hintNone: "Write your own, on any topic. Each exhibit you visit adds a first step here too." },
-          { key: "small", q: "Keep it simple.", hint: "What's one small thing you'll do? Keep it short enough to finish in 10 minutes, like finding a phone number or sending one text." },
+          { q: "Pick your first step.", hint: "Choose one below, or write your own. Keep it small enough to finish in 10 minutes, like finding a phone number or sending one text." },
           { key: "day", q: "Pick a day.", hint: "When will you do it? Choose a day this week or next." },
-          { key: "who", q: "Bring someone along.", hint: "Who could join you, or who could you tell? One name is enough." },
-          { key: "sign", q: "Confirm it's working.", hint: "What small change would tell you it's helping? A change in you is enough!" }
+          { key: "who", q: "Bring someone along.", hint: "Who could join you, or who could you tell? One name is enough." }
         ],
         startHere: "Start here",
         start: "Your start",
         own: "Or write your own:",
-        ownNone: "Write your own:",
         ownPlaceholder: "My first step is...",
         saved: "Your answers stay on this device, and they go in your Field Guide."
       },
@@ -312,11 +302,8 @@ export default {
       take: {
         title: "Take your Field Guide home",
         text: "Everything from your trail, ready to keep: your way of helping, your first step and plan, your notes, and ways to help near you.",
-        door: "Which topics go in it?",
         print: "Print it",
         download: "Download it",
-        email: "Email me a link",
-        copy: "Copy link",
         note: "Printing also lets you save it as a PDF. Downloading saves one file, with your notes, that opens in any web browser."
       },
       pass: {
@@ -326,27 +313,46 @@ export default {
         subject: "Try the Climate Trailway",
         email: "Email it"
       },
-      feedback: {
-        title: "Help make the trail better",
-        text: "The trail is new and still a little bumpy. Your feedback helps decide what fixes come next! Answer any questions you like.",
-        to: "trailmap@kinfeather.com",
-        subject: "Climate Trailway feedback",
-        questions: [
-          { key: "fit", ask: "Did you find a way of helping that fits you?", options: ["Yes", "Partly", "Not yet"] },
-          { key: "step", ask: "Do you plan to try a first step?", options: ["Yes, soon", "Maybe later", "Not sure yet"] },
-          { key: "length", ask: "How did the length of the trail feel?", options: ["Too short", "About right", "Too long"] }
-        ],
-        comment: "Anything you loved, or anything that got in the way?",
-        includes: "NOTE: In addition to your own email address, this feedback email will also name the trail you took and the exhibits you visited. Your personal notes, however, stay private.",
-        send: "Write the email",
-        copy: "Copy it",
-        privacy: "**Nothing is sent until you send it.** The button opens your own email app. If it doesn't, copy your answers and email them to {to}.",
-        /* The email itself. Lines with no answer are left out. */
-        mail: { intro: "Climate Trailway feedback", trail: "Trail", exhibits: "Exhibits", comment: "Comments" }
-      },
       words: "Carry these words home",
       /* The end of the line: a sign marking the end of the trail. */
       end: { sign: "End of the trail", home: "Back to the Trailhead" }
+    }
+  },
+
+  /* Two feedback forms, both sent by email from the reader's own app, so
+     nothing is saved online. "Before you go" sits at the end of the trail
+     and asks whether it worked. Preview feedback sits below the trail
+     and asks how the trail itself could be better. */
+  feedback: {
+    to: "trailmap@kinfeather.com",
+    includes: "Your email will include your trail and the exhibits you visited, but not your notes.",
+    copy: "Copy it",
+    privacy: "**Nothing is sent until you send it.** The button opens your own email app. If it doesn't, copy your answers and email them to {to}.",
+    mail: { trail: "Trail", exhibits: "Exhibits" },
+    check: {
+      title: "Before you go",
+      text: "Three quick questions. Your answers show whether the trail does its job.",
+      subject: "Climate Trailway: before you go",
+      questions: [
+        { key: "before", ask: "Before today, did you see a place for yourself in climate action?", options: ["No", "A little", "Yes"] },
+        { key: "now", ask: "And now?", options: ["No", "A little", "Yes"] },
+        { key: "fit", ask: "Did you find a way of helping that fits you?", options: ["Yes", "Partly", "Not yet"] }
+      ],
+      send: "Send my answers"
+    },
+    preview: {
+      title: "Preview feedback",
+      text: "The trail is new and still a little bumpy. Your feedback helps decide what fixes come next! Answer any questions you like.",
+      subject: "Climate Trailway preview feedback",
+      questions: [
+        { key: "step", ask: "Do you plan to try a first step?", options: ["Yes, soon", "Maybe later", "Not sure yet"] },
+        { key: "length", ask: "How did the length of the trail feel?", options: ["Too short", "About right", "Too long"] }
+      ],
+      comments: [
+        { key: "topics", ask: "Was any topic unclear, or missing?" },
+        { key: "comment", ask: "Anything you loved, or anything that got in the way?" }
+      ],
+      send: "Write the email"
     }
   },
 

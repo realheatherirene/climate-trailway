@@ -8,7 +8,7 @@ const IMLS = { title: "IMLS: Mass Audubon's Accessible Trails Project", url: "ht
 export default {
   title: "Climate Trailway",
   lede: "Find your way into the climate movement!",
-  intro: "A free, self-guided trail: pick your way of helping, visit the Climate Pavilion, and leave with a Field Guide to climate action.",
+  intro: "Find out how the ways you already care for people can help with climate change, then leave with one first step and a Field Guide to climate action.",
 
   /* The Visitor Center's board, with the trail picker at the bottom. The key
      shows the places on the map (drawn from shared.js) and the two kinds
@@ -20,7 +20,7 @@ export default {
       { route: true }
     ],
     /* A few words on accessibility, just above the story link. */
-    storyIntro: "An accessible trail is one that people of all abilities can use. Outdoors, that can mean a smooth, wide path, benches for resting, or maps in Braille and with audio. This Trail is open to everyone, Its builders are committed to reaching or exceeding web content accessibility guidelines wherever possible. If we missed something, please let us know.",
+    storyIntro: "An accessible trail is one people of all abilities can use, like a smooth, wide path with benches and maps in Braille. This trail aims for the same online, so if we missed something, please let us know.",
     story: [
       { p: "Mass Audubon, a conservation group in Massachusetts, builds All Persons Trails so visitors of all abilities can enjoy nature. Its trails offer features like audio tours, Braille and tactile maps, rope guides, wider boardwalks, and benches. The trail at Brewster's Woods, opened in May 2024, has a wide, stable surface of crushed stone." },
       { quote: { text: "Nature provides a host of physical, mental, and emotional benefits that should be available to everyone.", who: "Renata Pomponi, Mass Audubon", src: MASS_AUDUBON } },
@@ -30,7 +30,7 @@ export default {
   },
 
   pick: {
-    hint: "Each trail name suggests a unique and special way people show care. Choose the trail that seems the most like you. Not sure? Try the three quick questions just below, or pick the one that's closest. You can switch at the end.",
+    hint: "Each trail is a way people show care. Pick the one most like you, or try three quick questions. You can switch at the end.",
 
     /* "Find your trail": an optional helper above the six trails. It's a
        way to recognize what you already do well, not a test, so nothing
@@ -45,7 +45,7 @@ export default {
        "Connecting and Communicating." */
     finder: {
       open: "Not sure which trail fits? Try three quick questions.",
-      intro: "This isn't a test, and there are no wrong answers. Check anything that's like you, or that you'd enjoy doing. Check as many as you like.",
+      intro: "There are no wrong answers. Check anything that sounds like you.",
       moments: [
         { ask: "When people plan a get-together, you might be the one who...", options: [
           ["Green", "invites everyone, including someone new"],
@@ -96,5 +96,5 @@ export default {
     Indigo: "sorting out what matters most, adjusting when things change, and helping people find their way"
   },
 
-  footnote: "Climate change is global. For now, this trail's resources and activity suggestions are primarily based in the United States."
+  footnote: "Climate change is global, but for now this trail's resources mostly come from the United States."
 };
