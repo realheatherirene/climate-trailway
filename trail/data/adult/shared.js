@@ -23,7 +23,7 @@ export default {
        picks a trail. */
     trailhead: { name: "Trailhead", icon: "i-sign", route: "Start here.",
       title: "Trailhead", sub: "Start here.",
-      hint: "The Climate Trailway takes 20 to 30 minutes to complete. If you need a break, just save your spot!" },
+      hint: "The Climate Trailway takes about 20 to 30 minutes to complete. If you need a break, you can save your spot." },
     /* Markers 1 to 4: on the reader's own trail. */
     trail: { name: "Markers 1–4", short: "Markers 1–4", icon: "i-trail" },
     /* The Climate Pavilion: where every trail meets, and the exhibits are.
