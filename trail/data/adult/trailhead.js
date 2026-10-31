@@ -8,7 +8,7 @@ const IMLS = { title: "IMLS: Mass Audubon's Accessible Trails Project", url: "ht
 export default {
   title: "Climate Trailway",
   lede: "Find your way into the climate movement!",
-  intro: "Find out how the ways you already care for people can help with climate change, then leave with one first step and a Field Guide to climate action.",
+  intro: "Pick a stewardship trail, visit the climate pavilion, do some exploring, jot down some notes, and take home a field guide to climate action!",
 
   /* The Visitor Center's board, with the trail picker at the bottom. The key
      shows the places on the map (drawn from shared.js) and the two kinds
@@ -30,7 +30,7 @@ export default {
   },
 
   pick: {
-    hint: "Each trail is a way people show care. Pick the one most like you, or try three quick questions. You can switch at the end.",
+    hint: "Each trail represents a different way of showing care. Start with the one that seems most like you.",
 
     /* "Find your trail": an optional helper above the six trails. It's a
        way to recognize what you already do well, not a test, so nothing
@@ -44,8 +44,8 @@ export default {
        {list} becomes the action words of the colors checked most:
        "Connecting and Communicating." */
     finder: {
-      open: "Not sure which trail fits? Try three quick questions.",
-      intro: "There are no wrong answers. Check anything that sounds like you.",
+      open: "Not sure which trail fits? Answer three quick questions.",
+      intro: "There are no right or wrong answers. Check all responses that sound like you.",
       moments: [
         { ask: "When people plan a get-together, you might be the one who...", options: [
           ["Green", "invites everyone, including someone new"],
@@ -96,5 +96,5 @@ export default {
     Indigo: "sorting out what matters most, adjusting when things change, and helping people find their way"
   },
 
-  footnote: "Climate change is global, but for now this trail's resources mostly come from the United States."
+  footnote: "The Climate Trailway's resources primarily represent the United States. Climate change is global, though, so do check back for our expansion updates."
 };
