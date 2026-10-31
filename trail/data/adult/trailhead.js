@@ -8,7 +8,7 @@ const IMLS = { title: "IMLS: Mass Audubon's Accessible Trails Project", url: "ht
 export default {
   title: "Climate Trailway",
   lede: "Find your way into the climate movement!",
-  intro: "Pick a stewardship trail, visit the climate pavilion, do some exploring, jot down some notes, and take home a field guide to climate action!",
+  intro: "Pick your trail, do some exploring, visit the climate pavilion, jot down some notes, and take home a field guide to climate action!",
 
   /* The Visitor Center's board, with the trail picker at the bottom. The key
      shows the places on the map (drawn from shared.js) and the two kinds
@@ -30,7 +30,7 @@ export default {
   },
 
   pick: {
-    hint: "Each trail represents a different way of showing care. Start with the one that seems most like you.",
+    hint: "Each trail is a different color, representing a different way of showing care. Start with the one that seems most like you.",
 
     /* "Find your trail": an optional helper above the six trails. It's a
        way to recognize what you already do well, not a test, so nothing
@@ -79,8 +79,8 @@ export default {
       go: "Start this trail",
       /* Under the suggested trail: the way on, to it or to the full list.
          The second is for when more than one trail comes up. */
-      after: "Take this trail, or choose any of the six trails below.",
-      afterMany: "Take one of these trails, or choose any of the six trails below."
+      after: "Take this trail, or choose any of the other trails below.",
+      afterMany: "Take one of these trails, or choose any of the other trails below."
     }
   },
 
@@ -96,5 +96,5 @@ export default {
     Indigo: "sorting out what matters most, adjusting when things change, and helping people find their way"
   },
 
-  footnote: "The Climate Trailway's resources primarily represent the United States. Climate change is global, though, so do check back for our expansion updates."
+  footnote: "For now, the Climate Trailway's resources primarily represent the United States."
 };
