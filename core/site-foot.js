@@ -25,7 +25,7 @@ export const SITE_FOOT = {
     { name: "Privacy Policy", url: "https://kinfeather.com/privacy" },
     { name: "Accessibility", url: "https://kinfeather.com/accessibility" }
   ],
-  note: "{name} is an open resource. No payment, login, or download is needed. To the best of our knowledge, all outside resources linked here are also free and open to access. Kinfeather is not affiliated with the organizations that host these resources and receives no financial or other incentive for sharing them.",
+  note: "{name} is free and open to everyone, with no payment, login, or download. As far as we know, every outside resource linked here is free too. Kinfeather isn't affiliated with those organizations and gets nothing for sharing them.",
   made: "{name} is a project of Kinfeather LLC.",
   name: "The Climate Trailway"
 };
@@ -38,7 +38,7 @@ const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
    just before the line about Kinfeather's links. */
 export function siteFootHTML(before = "", { name = SITE_FOOT.name, extra = "" } = {}) {
   const f = SITE_FOOT, named = s => s.replace(/\{name\}/g, name);
-  const note = named(f.note).replace(" Kinfeather is not", `${extra ? " " + extra : ""} Kinfeather is not`);
+  const note = named(f.note).replace(" Kinfeather isn't", `${extra ? " " + extra : ""} Kinfeather isn't`);
   return `${before}<ul>${f.links.map(l => `<li><a href="${esc(l.url)}">${esc(l.name)}</a></li>`).join("")}</ul>` +
     `<p class="site-note">${esc(note)}</p><p>${esc(named(f.made))}</p>`;
 }
